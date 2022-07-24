@@ -15,15 +15,22 @@ public class Vtigerloginpage {
 	public WebElement getUsername() {
 		return username;
 	}
-	 @ FindBy(xpath="//input[@name='user_password']")
- private WebElement password;
-  public WebElement getPassword() {
+	@ FindBy(xpath="//input[@name='user_password']")
+	private WebElement password;
+	public WebElement getPassword() {
 		return password;
 	}
-  @FindBy(id="submitButton")
-  private WebElement loginbutton;
-public WebElement getLoginbutton() {
-	return loginbutton;
-}
-  
+	@FindBy(id="submitButton")
+	private WebElement loginbutton;
+	public WebElement getLoginbutton() {
+		return loginbutton;
+	}
+	
+	public void logintoapp(String userName,String passWord)
+	{
+		username.sendKeys(userName);
+		password.sendKeys(passWord);
+		loginbutton.click();
+	}
+
 }

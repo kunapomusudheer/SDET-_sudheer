@@ -66,15 +66,14 @@ public class Webdriver_utility {
 			if(!mainid.equals(i))  {
 				driver.switchTo().window(i);
 			}
+		}
 	}
-}
 	public void switchtoMainWindow() {
 		String mainid = driver.getWindowHandle();
-		Set<String> Allid = driver.getWindowHandles();
-		for(String i:Allid) {
-			if(mainid.equals(i))  {
-				driver.switchTo().window(mainid);
+
 			}
+		
+	public void closeBrowser() {
+		driver.close();
 	}
-}
 }

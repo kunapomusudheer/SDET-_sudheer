@@ -17,7 +17,7 @@ public class Testcase6_createorg_selectall_deleteTest {
 		Fakedata fakedata=new Fakedata();
 		String orgname = fakedata.orgname();
 		int rnumber = fakedata.randomNumber();
-		fileproperty prop=new fileproperty();
+		fileproperty prop=new fileproperty(driver);
 		String Browser = prop.readpropertydata("browser");
 		String u = prop.readpropertydata("url");
 		String un = prop.readpropertydata("username");
@@ -67,22 +67,14 @@ public class Testcase6_createorg_selectall_deleteTest {
 		driver.findElement(By.xpath("//td[@class='tabSelected']")).click();
 		driver.findElement(By.xpath("//input[@class='txtBox']")).sendKeys(orgname+rnumber);
 		WebElement selecting=driver.findElement(By.xpath("//select[@id='bas_searchfield']"));
-		//Select s1=new Select(selecting);
-		//s1.selectByValue("accountname");
 		util.DropdownbyValue(selecting, "accountname");
 		driver.findElement(By.xpath("//input[@class='crmbutton small create']")).click();
 		Thread.sleep(5000);
 		WebElement ele1=driver.findElement(By.xpath("//input[@name='selected_id']"));
-		//Actions act=new Actions(driver);
-		//act.moveToElement(ele1);
-		//ele1.click();
 		util.mouseHandle(ele1);
 		driver.findElement(By.xpath("//input[@class='crmbutton small delete']")).click();
-		//Alert alt=driver.switchTo().alert();
-		//alt.accept();
 		util.alertAccept();
 		boolean str = driver.findElement(By.xpath("//span[@class='genHeaderSmall']")).isDisplayed();
-		//            WebElement str1 = driver.findElement(By.xpath("//span[normalize-space()='No Organization Found !']"));
 		if(str==true) {
 			System.out.println("test case deleted successfully");
 		}
@@ -92,7 +84,6 @@ public class Testcase6_createorg_selectall_deleteTest {
 		}
 	}
 }
-
 
 
 

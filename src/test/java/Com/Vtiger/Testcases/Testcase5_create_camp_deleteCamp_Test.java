@@ -17,6 +17,8 @@ import com.Vtiger_generic.Webdriver_utility;
 import com.Vtiger_generic.fileproperty;
 import com.github.javafaker.Name;
 
+import Pom_Classes.CreateCampaignPage;
+import Pom_Classes.Vtigerloginpage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Testcase5_create_camp_deleteCamp_Test {
@@ -26,7 +28,7 @@ public class Testcase5_create_camp_deleteCamp_Test {
 		Fakedata fakedata=new Fakedata();
 		String campName = fakedata.campName();
 		int rNumber = fakedata.randomNumber();
-		fileproperty prop=new fileproperty();
+		fileproperty prop=new fileproperty(driver);
 		String Browser = prop.readpropertydata("browser");
 		String u = prop.readpropertydata("url");
 		String un = prop.readpropertydata("username");
@@ -45,13 +47,24 @@ public class Testcase5_create_camp_deleteCamp_Test {
 		util.maximize();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		util.pageloadtimeout();
-		driver.findElement(By.name("user_name")).sendKeys(un,Keys.TAB,pwd);
-		driver.findElement(By.id("submitButton")).click();
-		driver.findElement(By.xpath("//img[@style='padding-left:5px']")).click();
-		driver.findElement(By.xpath("//a[@name='Campaigns']")).click();
-		driver.findElement(By.xpath("//img[@alt='Create Campaign...']")).click();
-		driver.findElement(By.xpath("//input[@name='campaignname']")).sendKeys(campName+ rNumber);
-		driver.findElement(By.xpath("//input[@class='crmButton small save']")).click();
+		//		driver.findElement(By.name("user_name")).sendKeys(un,Keys.TAB,pwd);
+		//		driver.findElement(By.id("submitButton")).click();
+		Vtigerloginpage login=new Vtigerloginpage(driver);
+		login.getUsername().sendKeys(un);
+		login.getPassword().sendKeys(pwd);
+		login.getLoginbutton().click();
+		Thread.sleep(3000);
+		CreateCampaignPage createcampaign=new CreateCampaignPage(driver);
+		createcampaign.getMorelink().click();
+		//driver.findElement(By.xpath("//img[@style='padding-left:5px']")).click();
+		//driver.findElement(By.xpath("//a[@name='Campaigns']")).click();
+		createcampaign.getCampbutton().click();
+		//driver.findElement(By.xpath("//img[@alt='Create Campaign...']")).click();
+		createcampaign.getcamplusbtn().click();
+		//driver.findElement(By.xpath("//input[@name='campaignname']")).sendKeys(campName+ rNumber);
+		createcampaign.getCampname().sendKeys(campName+ rNumber);
+		//driver.findElement(By.xpath("//input[@class='crmButton small save']")).click();
+		createcampaign.getCampsavename().click();
 		driver.findElement(By.xpath("//td[@class='tabSelected']")).click();
 		driver.findElement(By.xpath("//input[@name='search_text']")).sendKeys(campName+rNumber);
 		driver.findElement(By.xpath("//select[@name='search_field']")).click();

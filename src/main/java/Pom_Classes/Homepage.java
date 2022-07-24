@@ -35,5 +35,11 @@ public class Homepage {
 	public WebElement getContactplusbutton() {
 		return contactplusbutton;
 	}
+	@FindBy(xpath="//td[@class='tabSelected']")
+	private WebElement Campaignlink;
+	public WebElement getCampaignlink() {
+		return Campaignlink;
+	}
+	
 }
 

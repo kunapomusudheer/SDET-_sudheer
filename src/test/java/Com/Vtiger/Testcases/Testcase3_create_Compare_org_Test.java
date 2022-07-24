@@ -27,7 +27,7 @@ public class Testcase3_create_Compare_org_Test {
 		String firstname = fakedata.firstName();
 		String lastname = fakedata.lastName();
 		WebDriver driver=null;
-		fileproperty prop=new fileproperty();
+		fileproperty prop=new fileproperty(driver);
 		String Browser = prop.readpropertydata("browser");
 		String u = prop.readpropertydata("url");
 		String un = prop.readpropertydata("username");
@@ -71,13 +71,13 @@ public class Testcase3_create_Compare_org_Test {
 		driver.findElement(By.name("firstname")).sendKeys(firstname);
 		driver.findElement(By.name("lastname")).sendKeys(lastname);
 		driver.findElement(By.xpath("//img[@alt='Select']")).click();
-//		String mainid = driver.getWindowHandle();
-//		Set<String> Allid = driver.getWindowHandles();
-//		for(String i:Allid) {
-//			if(!mainid.equals(i))  {
-//				driver.switchTo().window(i);
-//			}
-//		}
+		String mainid = driver.getWindowHandle();
+		//		Set<String> Allid = driver.getWindowHandles();
+		//		for(String i:Allid) {
+		//			if(!mainid.equals(i))  {
+		//				driver.switchTo().window(i);
+		//			}
+		//		}
 		util.switchchildWindow();
 		Thread.sleep(2000);
 		WebElement org=driver.findElement(By.xpath("//input[@name='search_text']"));
@@ -85,22 +85,24 @@ public class Testcase3_create_Compare_org_Test {
 		driver.findElement(By.xpath("//input[@class='crmbutton small create']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='project36']")).click();
-		//driver.switchTo().window(mainid);
+		driver.switchTo().window(mainid);
 		Thread.sleep(3000);
-		util.switchtoMainWindow();
+		//util.switchtoMainWindow();
 		driver.findElement(By.xpath("//input[@class='crmButton small save']")).click();
-		WebElement s1 = driver.findElement(By.xpath("//span[@class='dvHeaderText']"));
+		WebElement s1 = driver.findElement(By.xpath("//span[@class='genHeaderSmall']"));
 		String compare = s1.getText();
 
 		if(compare.contains(firstname)) {
 			System.out.println("organization is added and verified");
 		}
-		driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']")).click();
-		WebElement ele1=driver.findElement(By.xpath("//a[text()='Sign Out']"));
+		//		driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']")).click();
+		//		WebElement ele1=driver.findElement(By.xpath("//a[text()='Sign Out']"));
 		//Actions act=new Actions(driver);
 		//act.moveToElement(ele1);
 		//ele1.click();
-		util.mouseHandle(ele1);
+		//util.mouseHandle(ele1);
+		homepage.getSignoutimage().click();
+		homepage.getSignoutbuttonlink().click();
 	}
 
 

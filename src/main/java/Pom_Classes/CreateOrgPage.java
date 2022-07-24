@@ -20,9 +20,20 @@ public class CreateOrgPage {
 	public WebElement getOrgname() {
 		return orgname;
 	}
-   @FindBy(xpath="//input[@class='crmbutton small save']")
-   private WebElement orgsave;
-public WebElement getOrgsave() {
-	return orgsave;
-}
+	@FindBy(xpath="//input[@class='crmbutton small save']")
+	private WebElement orgsave;
+	public WebElement getOrgsave() {
+		return orgsave;
+	}
+	@FindBy(xpath="//select[@name='industry']")
+	private WebElement industryDD;
+	public WebElement getIndustryDD() {
+		return industryDD;
+	}
+	@FindBy(xpath="//span[@id='dtlview_Organization Name']")
+	private WebElement createdOrgMsg;
+	public WebElement getCreatedOrgMsg() {
+		return createdOrgMsg;
+	}
+	
 }

@@ -17,7 +17,7 @@ public class Testcase1_Select_particular_rowTest {
 
 	public static void main(String[] args) throws Throwable {
 		WebDriver driver = null;
-		fileproperty prop=new fileproperty();
+		fileproperty prop=new fileproperty(driver);
 		String Browser = prop.readpropertydata("browser");
 		
 		String u = prop.readpropertydata("url");

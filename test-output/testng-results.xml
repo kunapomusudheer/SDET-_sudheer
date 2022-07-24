@@ -2,16 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-08T13:44:50 IST" name="Default suite" finished-at="2022-07-08T13:45:02 IST" duration-ms="12759">
+  <suite started-at="2022-07-23T22:54:27 IST" name="Default suite" finished-at="2022-07-23T22:54:49 IST" duration-ms="21624">
     <groups>
     </groups>
-    <test started-at="2022-07-08T13:44:50 IST" name="Default test" finished-at="2022-07-08T13:45:02 IST" duration-ms="12759">
-      <class name="Vtiger_Assignments.Reports">
-        <test-method signature="createrReport()[pri:0, instance:Vtiger_Assignments.Reports@7bba5817]" started-at="2022-07-08T13:44:50 IST" name="createrReport" finished-at="2022-07-08T13:45:02 IST" duration-ms="12633" status="PASS">
+    <test started-at="2022-07-23T22:54:27 IST" name="Default test" finished-at="2022-07-23T22:54:49 IST" duration-ms="21624">
+      <class name="com.testNG.annotations_Implementation.Testcase1_Select_particular_rowTest">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:com.testNG.annotations_Implementation.Testcase1_Select_particular_rowTest@147e2ae7]" started-at="2022-07-23T22:54:27 IST" name="connectToDB" finished-at="2022-07-23T22:54:27 IST" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createrReport -->
-      </class> <!-- Vtiger_Assignments.Reports -->
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.testNG.annotations_Implementation.Testcase1_Select_particular_rowTest@147e2ae7]" started-at="2022-07-23T22:54:27 IST" name="launchBrowser" finished-at="2022-07-23T22:54:34 IST" duration-ms="7063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="logionAppln()[pri:0, instance:com.testNG.annotations_Implementation.Testcase1_Select_particular_rowTest@147e2ae7]" started-at="2022-07-23T22:54:34 IST" name="logionAppln" finished-at="2022-07-23T22:54:38 IST" duration-ms="3910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logionAppln -->
+        <test-method signature="main1()[pri:0, instance:com.testNG.annotations_Implementation.Testcase1_Select_particular_rowTest@147e2ae7]" started-at="2022-07-23T22:54:38 IST" name="main1" finished-at="2022-07-23T22:54:47 IST" duration-ms="8710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main1 -->
+        <test-method is-config="true" signature="logoutAppln()[pri:0, instance:com.testNG.annotations_Implementation.Testcase1_Select_particular_rowTest@147e2ae7]" started-at="2022-07-23T22:54:47 IST" name="logoutAppln" finished-at="2022-07-23T22:54:48 IST" duration-ms="1569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutAppln -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testNG.annotations_Implementation.Testcase1_Select_particular_rowTest@147e2ae7]" started-at="2022-07-23T22:54:48 IST" name="closeBrowser" finished-at="2022-07-23T22:54:49 IST" duration-ms="277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeConnectToDB()[pri:0, instance:com.testNG.annotations_Implementation.Testcase1_Select_particular_rowTest@147e2ae7]" started-at="2022-07-23T22:54:49 IST" name="closeConnectToDB" finished-at="2022-07-23T22:54:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnectToDB -->
+      </class> <!-- com.testNG.annotations_Implementation.Testcase1_Select_particular_rowTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Vtiger_Assignments.Reports">
+      <class name="com.testNG.annotations_Implementation.Testcase6_createorg_selectall_deleteTest">
         <methods>
-          <include name="createrReport"/>
+          <include name="closeBrowser"/>
+          <include name="exampl"/>
+          <include name="connectToDB"/>
+          <include name="launchBrowser"/>
+          <include name="logoutAppln"/>
+          <include name="logionAppln"/>
+          <include name="closeConnectToDB"/>
         </methods>
-      </class> <!-- Vtiger_Assignments.Reports -->
+      </class> <!-- com.testNG.annotations_Implementation.Testcase6_createorg_selectall_deleteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

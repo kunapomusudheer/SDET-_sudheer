@@ -21,8 +21,9 @@ public class Testcase2_createOrganization_Test {
 	public static void main(String[] args) throws Throwable {
 		WebDriver driver = null;
 		Fakedata fake=new Fakedata();
+		String orgname=fake.orgname();
 		int randomNumber = fake.randomNumber();
-		fileproperty prop=new fileproperty();
+		fileproperty prop=new fileproperty(driver);
 		String Browser = prop.readpropertydata("browser");
 		String u = prop.readpropertydata("url");
 		String un = prop.readpropertydata("username");
@@ -55,11 +56,11 @@ public class Testcase2_createOrganization_Test {
 		homepage.getOrglinkbutton().click();
 		CreateOrgPage orgpage=new CreateOrgPage(driver);
 		orgpage.getCreateorgplusbtn().click();
-		orgpage.getOrgname().sendKeys("Testyantra1"+randomNumber);
+		orgpage.getOrgname().sendKeys(orgname+randomNumber);
 		//		driver.findElement(By.xpath("//img[@src='themes/softed/images/btnL3Add.gif']")).click();
 		//		driver.findElement(By.name("accountname")).sendKeys("Testyantra1"+randomNumber);
 		driver.findElement(By.xpath("//select[@name='industry']")).click();
-		WebElement ele=driver.findElement(By.xpath("//select[@name='industry']"));
+		WebElement ele=driver.findElement(By.xpath("//span[@class='genHeaderSmall']"));
 		// Select s=new Select(ele);
 		// s.selectByValue("Apparel");
 		util.DropdownbyValue(ele,"Apparel");
@@ -69,15 +70,15 @@ public class Testcase2_createOrganization_Test {
 		homepage.getOrglinkbutton().click();
 		OrganizationInfoPage orginfo=new OrganizationInfoPage(driver);
 		Thread.sleep(4000);
-		orginfo.getSearchbox().sendKeys("Testyantra1 "+randomNumber);
+		orginfo.getSearchbox().sendKeys(orgname+randomNumber);
 		orginfo.getOrganizationDD().click();
 		WebElement ordDD=driver.findElement(By.name("search_field"));
 		util.DropdownbyValue(ordDD,"accountname");
 		orginfo.getfinalsearch().click();
-		
+
 		WebElement s1 = driver.findElement(By.xpath("//span[@class='dvHeaderText']"));
 		String compare = s1.getText();
-		if(compare.contains("Testyantra1")) 
+		if(compare.contains(orgname+randomNumber)) 
 		{
 			System.out.println("organization is added and verified");
 		}
