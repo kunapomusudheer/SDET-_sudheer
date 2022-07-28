@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testNG.annotations_Implementation.Testcase6_createorg_selectall_deleteTest">
+      <class name="AllTestCases.TC_05_create_camp_deleteCamp_Test">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="exampl"/>
+          <include name="example"/>
           <include name="connectToDB"/>
+          <include name="logionAppln"/>
           <include name="launchBrowser"/>
           <include name="logoutAppln"/>
-          <include name="logionAppln"/>
           <include name="closeConnectToDB"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.testNG.annotations_Implementation.Testcase6_createorg_selectall_deleteTest -->
+      </class> <!-- AllTestCases.TC_05_create_camp_deleteCamp_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

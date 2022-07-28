@@ -52,11 +52,7 @@ public class Listnerimplements implements ITestListener {
 		System.out.println("TestFailedButWithinSuccessPercentage");
 	}
 
-	@Override
-	public void onTestFailedWithTimeout(ITestResult result) {
-		System.out.println("TestFailedWithTimeout");
-	}
-
+	
 	@Override
 	public void onStart(ITestContext context) {
 		System.out.println("on start");

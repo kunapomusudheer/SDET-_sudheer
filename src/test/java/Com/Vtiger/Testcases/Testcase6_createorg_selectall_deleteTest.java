@@ -6,18 +6,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
 import com.Vtiger_generic.Fakedata;
 import com.Vtiger_generic.Webdriver_utility;
 import com.Vtiger_generic.fileproperty;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Testcase6_createorg_selectall_deleteTest {
-	public static void main(String[] args) throws Throwable {
+	@Test
+	public  void main1() throws Throwable {
 		WebDriver driver = null;
 		Fakedata fakedata=new Fakedata();
 		String orgname = fakedata.orgname();
 		int rnumber = fakedata.randomNumber();
-		fileproperty prop=new fileproperty(driver);
+		fileproperty prop=new fileproperty();
 		String Browser = prop.readpropertydata("browser");
 		String u = prop.readpropertydata("url");
 		String un = prop.readpropertydata("username");

@@ -17,12 +17,12 @@ public class Testcase1_Select_particular_rowTest {
 
 	public static void main(String[] args) throws Throwable {
 		WebDriver driver = null;
-		fileproperty prop=new fileproperty(driver);
+		fileproperty prop=new fileproperty();
 		String Browser = prop.readpropertydata("browser");
 		
 		String u = prop.readpropertydata("url");
 		
-		String un = prop.readpropertydata("username");
+		String un = prop.readpropertydata("username");	
 		String pwd = prop.readpropertydata("password");
 		if(Browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();

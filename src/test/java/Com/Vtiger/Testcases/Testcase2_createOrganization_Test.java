@@ -23,7 +23,7 @@ public class Testcase2_createOrganization_Test {
 		Fakedata fake=new Fakedata();
 		String orgname=fake.orgname();
 		int randomNumber = fake.randomNumber();
-		fileproperty prop=new fileproperty(driver);
+		fileproperty prop=new fileproperty();
 		String Browser = prop.readpropertydata("browser");
 		String u = prop.readpropertydata("url");
 		String un = prop.readpropertydata("username");

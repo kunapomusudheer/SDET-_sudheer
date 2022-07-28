@@ -35,5 +35,13 @@ public class CreateCampaignPage {
 	public WebElement getCampsavename() {
 		return campsavename;
 	}
+	@FindBy(xpath="//span[@id='dtlview_Campaign Name']")
+	private WebElement getCreatedCampaign;
+	public WebElement getGetCreatedCampaign() {
+		return getCreatedCampaign;
+	}
 	
-}
+	
+	}
+	
+

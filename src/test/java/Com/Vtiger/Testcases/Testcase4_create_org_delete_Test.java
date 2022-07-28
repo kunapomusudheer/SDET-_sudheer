@@ -31,7 +31,7 @@ public class Testcase4_create_org_delete_Test {
 		String orgname = fakedata.orgname();
 		int rnumber = fakedata.randomNumber();
 
-		fileproperty prop=new fileproperty(driver);
+		fileproperty prop=new fileproperty();
 		String Browser = prop.readpropertydata("browser");
 		String u = prop.readpropertydata("url");
 		String un = prop.readpropertydata("username");

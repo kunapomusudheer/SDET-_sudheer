@@ -28,7 +28,7 @@ public class Testcase5_create_camp_deleteCamp_Test {
 		Fakedata fakedata=new Fakedata();
 		String campName = fakedata.campName();
 		int rNumber = fakedata.randomNumber();
-		fileproperty prop=new fileproperty(driver);
+		fileproperty prop=new fileproperty();
 		String Browser = prop.readpropertydata("browser");
 		String u = prop.readpropertydata("url");
 		String un = prop.readpropertydata("username");

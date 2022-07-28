@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	public  WebDriver driver;
-	fileproperty property=new fileproperty(driver);
+	fileproperty property=new fileproperty();
 	Vtigerloginpage login = new Vtigerloginpage(driver);
 	Webdriver_utility wu = new Webdriver_utility(driver);
 	@BeforeSuite

@@ -1,16 +1,10 @@
 package Com.Vtiger.Testcases;
 
-import java.time.Duration;
-import java.util.Set;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 
 import com.Vtiger_generic.Fakedata;
 import com.Vtiger_generic.Webdriver_utility;
@@ -27,7 +21,7 @@ public class Testcase3_create_Compare_org_Test {
 		String firstname = fakedata.firstName();
 		String lastname = fakedata.lastName();
 		WebDriver driver=null;
-		fileproperty prop=new fileproperty(driver);
+		fileproperty prop=new fileproperty();
 		String Browser = prop.readpropertydata("browser");
 		String u = prop.readpropertydata("url");
 		String un = prop.readpropertydata("username");

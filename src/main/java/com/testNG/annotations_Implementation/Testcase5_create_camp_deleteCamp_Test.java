@@ -1,11 +1,6 @@
 package com.testNG.annotations_Implementation;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import com.Vtiger_generic.BaseClass;
@@ -16,8 +11,6 @@ import com.Vtiger_generic.fileproperty;
 import Pom_Classes.CampaignInfoPage;
 import Pom_Classes.CreateCampaignPage;
 import Pom_Classes.Homepage;
-import Pom_Classes.Vtigerloginpage;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Testcase5_create_camp_deleteCamp_Test extends BaseClass {
 	@Test
@@ -25,7 +18,7 @@ public class Testcase5_create_camp_deleteCamp_Test extends BaseClass {
 		Fakedata fakedata=new Fakedata();
 		String campName = fakedata.campName();
 		int rNumber = fakedata.randomNumber();
-		fileproperty prop=new fileproperty(driver);
+		fileproperty prop=new fileproperty();
 		Webdriver_utility util=new Webdriver_utility(driver);
 		Thread.sleep(3000);
 		CreateCampaignPage cCamp=new CreateCampaignPage(driver);
