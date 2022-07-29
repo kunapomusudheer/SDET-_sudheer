@@ -1,6 +1,7 @@
 package com.testNG.annotations_Implementation;
 
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Vtiger_generic.BaseClass;
@@ -11,7 +12,7 @@ import com.Vtiger_generic.fileproperty;
 import Pom_Classes.CampaignInfoPage;
 import Pom_Classes.CreateCampaignPage;
 import Pom_Classes.Homepage;
-
+@Listeners(com.Vtiger_generic.Listeners.class)
 public class Testcase5_create_camp_deleteCamp_Test extends BaseClass {
 	@Test
 	public void example() throws Throwable {
@@ -42,10 +43,10 @@ public class Testcase5_create_camp_deleteCamp_Test extends BaseClass {
 		campaignInfoPage.getCheckbox().click();
 		campaignInfoPage.getCampDelete().click();
 		util.alertAccept();
-//		boolean str = driver.findElement(By.xpath("//span[@class='genHeaderSmall']")).isDisplayed();
-//		if(str==true) {
-//			System.out.println("test case deleted successfully");
-//		}
+		//		boolean str = driver.findElement(By.xpath("//span[@class='genHeaderSmall']")).isDisplayed();
+		//		if(str==true) {
+		//			System.out.println("test case deleted successfully");
+		//		}
 	}
 }
 

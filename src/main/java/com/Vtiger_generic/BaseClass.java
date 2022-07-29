@@ -14,19 +14,19 @@ import Pom_Classes.Vtigerloginpage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
-	public  WebDriver driver;
+	public static  WebDriver driver;
 	fileproperty property=new fileproperty();
 	Vtigerloginpage login = new Vtigerloginpage(driver);
 	Webdriver_utility wu = new Webdriver_utility(driver);
-	@BeforeSuite
+	@BeforeSuite(groups= {"Smoke","Regression"})
 	public void connectToDB() {
 		System.out.println("====DB connection done");
 	}
-	@AfterSuite
+	@AfterSuite(groups= {"Smoke","Regression"})
 	public void closeConnectToDB() {
 		System.out.println("====DB connection closed");
 	}
-	@BeforeClass
+	@BeforeClass(groups= {"Smoke","Regression"})
 	public void launchBrowser() throws Throwable {
 
 		String value=property.readpropertydata("browser");
@@ -45,12 +45,12 @@ public class BaseClass {
 		driver.get(property.readpropertydata("url"));
 
 	}
-	@AfterClass
+	@AfterClass(groups= {"Smoke","Regression"})
 	public void closeBrowser() {
 		Webdriver_utility utility = new Webdriver_utility(driver);
 		utility.closeBrowser();
 	}
-	@BeforeMethod
+	@BeforeMethod(groups= {"Smoke","Regression"})
 	public void logionAppln() throws Throwable {
 
 		Vtigerloginpage login=new Vtigerloginpage(driver);
@@ -60,7 +60,7 @@ public class BaseClass {
 		//		login.getPassword().sendKeys(property.readpropertydata("password"));
 		//		login.getLoginbutton().click();
 	}
-	@AfterMethod
+	@AfterMethod(groups= {"Smoke","Regression"})
 	public void logoutAppln() throws Throwable {
 		Homepage homepage = new Homepage(driver);
 		homepage.getSignoutimage().click();

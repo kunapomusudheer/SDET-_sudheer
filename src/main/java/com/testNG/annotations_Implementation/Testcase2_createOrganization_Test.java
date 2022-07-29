@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Vtiger_generic.BaseClass;
@@ -20,9 +21,9 @@ import Pom_Classes.Homepage;
 import Pom_Classes.OrganizationInfoPage;
 import Pom_Classes.Vtigerloginpage;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+@Listeners(com.Vtiger_generic.Listeners.class)
 public class Testcase2_createOrganization_Test extends BaseClass {
-
+	
 	@Test
 	public void createOrg() throws Throwable {
 

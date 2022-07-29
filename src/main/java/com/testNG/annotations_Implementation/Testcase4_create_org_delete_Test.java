@@ -1,5 +1,6 @@
 package com.testNG.annotations_Implementation;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.Vtiger_generic.BaseClass;
 import com.Vtiger_generic.Fakedata;
@@ -8,13 +9,13 @@ import Pom_Classes.CreateOrgPage;
 import Pom_Classes.DeleteOrgAnd_Compare;
 import Pom_Classes.Homepage;
 import Pom_Classes.OrganizationInfoPage;
-
+@Listeners(com.Vtiger_generic.Listeners.class)
 public class Testcase4_create_org_delete_Test extends BaseClass{
 	@Test
 	public void run() throws Throwable {
 		Fakedata fake=new Fakedata();
 		String orgname=fake.orgname();
-		int randomNumber = fake.randomNumber();
+		int randomNumber = Fakedata.randomNumber();
 		String organizationname = (orgname+randomNumber);
 		Webdriver_utility util=new Webdriver_utility(driver);
 		Thread.sleep(3000);
@@ -43,13 +44,13 @@ public class Testcase4_create_org_delete_Test extends BaseClass{
 		deleteCB.getCheckbox().click();
 		deleteCB.getDeleteOrg().click();
 		util.alertAccept();
-//		boolean compare = deleteCB.getDeleteComparHeaderMsg().isDisplayed();
-//		if(compare==true) {
-//			System.out.println("test case deleted successfully");
-//		}
-//		else {
-//			System.out.println("organization is not deleted");
-//		}
+		//		boolean compare = deleteCB.getDeleteComparHeaderMsg().isDisplayed();
+		//		if(compare==true) {
+		//			System.out.println("test case deleted successfully");
+		//		}
+		//		else {
+		//			System.out.println("organization is not deleted");
+		//		}
 	}
 
 }

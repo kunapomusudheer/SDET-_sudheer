@@ -3,6 +3,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Vtiger_generic.BaseClass;
@@ -12,7 +13,7 @@ import Pom_Classes.CreateOrgPage;
 import Pom_Classes.DeleteOrgAnd_Compare;
 import Pom_Classes.Homepage;
 import Pom_Classes.OrganizationInfoPage;
-
+@Listeners(com.Vtiger_generic.Listeners.class)
 public class Testcase6_createorg_selectall_deleteTest extends BaseClass{
 	@Test
 	public void exampl() throws Throwable {

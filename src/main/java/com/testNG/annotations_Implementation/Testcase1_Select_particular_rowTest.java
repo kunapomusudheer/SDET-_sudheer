@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Vtiger_generic.BaseClass;
@@ -17,15 +19,16 @@ import Pom_Classes.Homepage;
 import Pom_Classes.OrganizationInfoPage;
 import Pom_Classes.Vtigerloginpage;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+@Listeners(com.Vtiger_generic.Listeners.class)
 public class Testcase1_Select_particular_rowTest extends BaseClass{
-	@Test
+	@Test()
 	public void main1() throws Throwable  {
 
 		Webdriver_utility util=new Webdriver_utility(driver);
 		Vtigerloginpage login=new Vtigerloginpage(driver);
 		Homepage homepage=new Homepage(driver);
 		homepage.getOrglinkbutton().click();
+		Assert.assertEquals(false, true);
 		OrganizationInfoPage organizationInfoPage=new OrganizationInfoPage(driver);
 		List<WebElement> tablecount =organizationInfoPage.getAllorgTableData();
 		int i = tablecount.size();

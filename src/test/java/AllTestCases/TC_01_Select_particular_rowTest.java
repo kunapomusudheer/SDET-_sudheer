@@ -3,19 +3,22 @@ package AllTestCases;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.Vtiger_generic.BaseClass;
+import com.Vtiger_generic.Retryanalyzer;
 
 import Pom_Classes.Homepage;
 import Pom_Classes.OrganizationInfoPage;
 
 public class TC_01_Select_particular_rowTest extends BaseClass{
 	
-	@Test
+	@Test(groups="Smoke",retryAnalyzer = Retryanalyzer.class)
 	public void main1() throws Throwable  {
 		Homepage homepage=new Homepage(driver);
 		homepage.getOrglinkbutton().click();
+		Assert.fail();
 		OrganizationInfoPage organizationInfoPage=new OrganizationInfoPage(driver);
 		List<WebElement> tablecount =organizationInfoPage.getAllorgTableData();
 		int i = tablecount.size();

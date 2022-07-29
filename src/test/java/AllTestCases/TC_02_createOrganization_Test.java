@@ -14,7 +14,7 @@ import Pom_Classes.OrganizationInfoPage;
 
 public class TC_02_createOrganization_Test extends BaseClass {
 
-	@Test
+	@Test(groups="Smoke")
 	public void createOrg() throws Throwable {
 		Fakedata fake=new Fakedata();
 		String orgname=fake.orgname();

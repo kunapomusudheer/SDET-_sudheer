@@ -11,7 +11,7 @@ import Pom_Classes.ContactInformation;
 import Pom_Classes.Homepage;
 
 public class TC_03_create_compare_orgTest extends BaseClass {
-	@Test
+	@Test(groups="Regression")
 	public void abcd() throws Throwable {
 
 		Fakedata fakedata=new Fakedata();

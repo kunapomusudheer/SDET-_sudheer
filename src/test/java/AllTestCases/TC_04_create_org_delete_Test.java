@@ -12,7 +12,7 @@ import Pom_Classes.Homepage;
 import Pom_Classes.OrganizationInfoPage;
 
 public class TC_04_create_org_delete_Test extends BaseClass{
-	@Test
+	@Test(groups="Regression")
 	public void run() throws Throwable {
 		Fakedata fake=new Fakedata();
 		String orgname=fake.orgname();

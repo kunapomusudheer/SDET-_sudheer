@@ -10,7 +10,7 @@ import Pom_Classes.Homepage;
 import Pom_Classes.OrganizationInfoPage;
 
 public class TC_06_createorg_selectall_deleteTest extends BaseClass{
-	@Test
+	@Test(groups= {"Smoke","Regression"})
 	public void exampl() throws Throwable {
 		Fakedata fakedata=new Fakedata();
 		String orgname = fakedata.orgname();

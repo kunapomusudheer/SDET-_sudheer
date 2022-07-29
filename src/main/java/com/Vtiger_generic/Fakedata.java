@@ -44,8 +44,10 @@ public String orgname() {
  * Description : This method returns random numbers 
  * @return int Random number
  */
-public int randomNumber() {
-	Random number=new Random();
+
+
+static Random number=new Random();
+public static int randomNumber() {
 	int rnumber = number.nextInt(1000);
 	return rnumber;
 }

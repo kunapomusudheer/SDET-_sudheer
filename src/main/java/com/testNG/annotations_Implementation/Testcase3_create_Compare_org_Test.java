@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Vtiger_generic.BaseClass;
@@ -20,7 +21,7 @@ import com.Vtiger_generic.fileproperty;
 import Pom_Classes.ContactInformation;
 import Pom_Classes.Homepage;
 import Pom_Classes.Vtigerloginpage;
-
+@Listeners(com.Vtiger_generic.Listeners.class)
 public class Testcase3_create_Compare_org_Test extends BaseClass {
 	@Test
 	public void abcd() throws Throwable {

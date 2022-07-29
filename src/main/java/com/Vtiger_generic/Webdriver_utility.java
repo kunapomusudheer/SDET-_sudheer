@@ -1,15 +1,21 @@
 package com.Vtiger_generic;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Set;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.google.common.io.Files;
 
 public class Webdriver_utility {
 	WebDriver driver;
@@ -69,10 +75,18 @@ public class Webdriver_utility {
 		}
 	}
 	public void switchtoMainWindow() {
-		String mainid = driver.getWindowHandle();
-
-			}
+		driver.switchTo().defaultContent();
 		
+	}
+	
+	public void screenshot(String path) throws Throwable {
+		driver = BaseClass.driver;
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File src = ts.getScreenshotAs(OutputType.FILE);
+		File dest = new File(path);
+		Files.copy(src, dest);
+	}
+	
 	public void closeBrowser() {
 		driver.close();
 	}

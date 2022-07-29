@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="classes" >
-
+<suite name="Suite">
+<groups>
+<run>
+<include name="Regression"></include>
+</run>
+</groups>
+<listeners>
+<listener class-name="com.Vtiger_generic.Listeners"></listener>
+</listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="AllTestCases.TC_03_create_Compare_org_Test"/>
       <class name="AllTestCases.TC_04_create_org_delete_Test"/>
       <class name="AllTestCases.TC_06_createorg_selectall_deleteTest"/>
       <class name="AllTestCases.TC_01_Select_particular_rowTest"/>
       <class name="AllTestCases.TC_05_create_camp_deleteCamp_Test"/>
+      <class name="AllTestCases.TC_03_create_compare_orgTest"/>
       <class name="AllTestCases.TC_02_createOrganization_Test"/>
     </classes>
   </test> <!-- Test -->

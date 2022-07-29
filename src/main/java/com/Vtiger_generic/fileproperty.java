@@ -15,7 +15,7 @@ public class fileproperty {
 	
 	public String readpropertydata(String key) throws Exception 
 	{
-		FileInputStream fis=new FileInputStream("../SDET7_SUDHEER/src/main/java/com/Vtiger_generic/prop.PROPERTIES");
+		FileInputStream fis=new FileInputStream(IAutoconstants.propertyfilepth);
 		Properties prop= new Properties();
 		prop.load(fis);
 		String value=prop.getProperty(key);
@@ -24,7 +24,7 @@ public class fileproperty {
 	
 	
 	public void openBrowser1(String key) throws Throwable {
-		FileInputStream fis=new FileInputStream("../SDET7_SUD/src/main/java/com/Vtiger_generic/prop.PROPERTIES");
+		FileInputStream fis=new FileInputStream(IAutoconstants.propertyfilepth);
 		
 	}
 }

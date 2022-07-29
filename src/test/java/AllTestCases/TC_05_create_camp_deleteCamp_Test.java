@@ -13,7 +13,7 @@ import Pom_Classes.DeleteOrgAnd_Compare;
 import Pom_Classes.Homepage;
 
 public class TC_05_create_camp_deleteCamp_Test extends BaseClass {
-	@Test
+	@Test(groups= {"Smoke","Regression"})
 	public void example() throws Throwable {
 		Fakedata fakedata=new Fakedata();
 		String campName = fakedata.campName();

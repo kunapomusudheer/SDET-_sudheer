@@ -3,9 +3,9 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AllTestCases.TC_05_create_camp_deleteCamp_Test">
+      <class name="AllTestCases.TC_01_Select_particular_rowTest">
         <methods>
-          <include name="example"/>
+          <include name="main1"/>
           <include name="connectToDB"/>
           <include name="logionAppln"/>
           <include name="launchBrowser"/>
@@ -13,7 +13,7 @@
           <include name="closeConnectToDB"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- AllTestCases.TC_05_create_camp_deleteCamp_Test -->
+      </class> <!-- AllTestCases.TC_01_Select_particular_rowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
