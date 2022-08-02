@@ -18,7 +18,7 @@ public class TC_01_Select_particular_rowTest extends BaseClass{
 	public void main1() throws Throwable  {
 		Homepage homepage=new Homepage(driver);
 		homepage.getOrglinkbutton().click();
-		Assert.fail();
+		
 		OrganizationInfoPage organizationInfoPage=new OrganizationInfoPage(driver);
 		List<WebElement> tablecount =organizationInfoPage.getAllorgTableData();
 		int i = tablecount.size();
