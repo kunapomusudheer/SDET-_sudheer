@@ -1,228 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="0" failed="1" skipped="3">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-28T12:52:10Z" name="Default suite" finished-at="2022-07-28T12:53:05Z" duration-ms="54801">
+  <suite started-at="2022-07-29T12:43:31Z" name="Default suite" finished-at="2022-07-29T12:43:57Z" duration-ms="25821">
     <groups>
-      <group name="Smoke">
-        <method signature="TC_01_Select_particular_rowTest.main1()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" name="main1" class="AllTestCases.TC_01_Select_particular_rowTest"/>
-      </group> <!-- Smoke -->
+      <group name="Regression">
+        <method signature="TC_03_create_compare_ContactTest.abcd()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" name="abcd" class="AllTestCases.TC_03_create_compare_ContactTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2022-07-28T12:52:10Z" name="Default test" finished-at="2022-07-28T12:53:05Z" duration-ms="54801">
-      <class name="AllTestCases.TC_01_Select_particular_rowTest">
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:10Z" name="connectToDB" finished-at="2022-07-28T12:52:10Z" duration-ms="27" status="PASS">
+    <test started-at="2022-07-29T12:43:31Z" name="Default test" finished-at="2022-07-29T12:43:57Z" duration-ms="25821">
+      <class name="AllTestCases.TC_03_create_compare_ContactTest">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:31Z" name="connectToDB" finished-at="2022-07-29T12:43:31Z" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:10Z" name="launchBrowser" finished-at="2022-07-28T12:52:17Z" duration-ms="6345" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:31Z" name="launchBrowser" finished-at="2022-07-29T12:43:35Z" duration-ms="4472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="logionAppln()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:17Z" name="logionAppln" finished-at="2022-07-28T12:52:21Z" duration-ms="4139" status="PASS">
+        <test-method is-config="true" signature="logionAppln()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:35Z" name="logionAppln" finished-at="2022-07-29T12:43:38Z" duration-ms="2415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logionAppln -->
-        <test-method signature="main1()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:21Z" name="main1" finished-at="2022-07-28T12:52:28Z" duration-ms="6981" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.fail(Assert.java:103)
-at AllTestCases.TC_01_Select_particular_rowTest.main1(TC_01_Select_particular_rowTest.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="abcd()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:38Z" name="abcd" finished-at="2022-07-29T12:43:55Z" duration-ms="17472" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- main1 -->
-        <test-method is-config="true" signature="logoutAppln()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:28Z" name="logoutAppln" finished-at="2022-07-28T12:52:29Z" duration-ms="1577" status="PASS">
+        </test-method> <!-- abcd -->
+        <test-method is-config="true" signature="logoutAppln()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:55Z" name="logoutAppln" finished-at="2022-07-29T12:43:57Z" duration-ms="1348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutAppln -->
-        <test-method is-config="true" signature="logionAppln()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:29Z" name="logionAppln" finished-at="2022-07-28T12:52:32Z" duration-ms="3086" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logionAppln -->
-        <test-method signature="main1()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:32Z" name="main1" finished-at="2022-07-28T12:52:39Z" duration-ms="6197" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.fail(Assert.java:103)
-at AllTestCases.TC_01_Select_particular_rowTest.main1(TC_01_Select_particular_rowTest.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- main1 -->
-        <test-method is-config="true" signature="logoutAppln()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:39Z" name="logoutAppln" finished-at="2022-07-28T12:52:40Z" duration-ms="1777" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutAppln -->
-        <test-method is-config="true" signature="logionAppln()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:40Z" name="logionAppln" finished-at="2022-07-28T12:52:44Z" duration-ms="3473" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logionAppln -->
-        <test-method signature="main1()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:44Z" name="main1" finished-at="2022-07-28T12:52:51Z" duration-ms="6917" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.fail(Assert.java:103)
-at AllTestCases.TC_01_Select_particular_rowTest.main1(TC_01_Select_particular_rowTest.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- main1 -->
-        <test-method is-config="true" signature="logoutAppln()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:51Z" name="logoutAppln" finished-at="2022-07-28T12:52:53Z" duration-ms="1870" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutAppln -->
-        <test-method is-config="true" signature="logionAppln()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:53Z" name="logionAppln" finished-at="2022-07-28T12:52:56Z" duration-ms="3453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logionAppln -->
-        <test-method signature="main1()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:52:56Z" name="main1" finished-at="2022-07-28T12:53:03Z" duration-ms="6810" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.fail(Assert.java:103)
-at AllTestCases.TC_01_Select_particular_rowTest.main1(TC_01_Select_particular_rowTest.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- main1 -->
-        <test-method is-config="true" signature="logoutAppln()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:53:03Z" name="logoutAppln" finished-at="2022-07-28T12:53:05Z" duration-ms="1901" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutAppln -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:53:05Z" name="closeBrowser" finished-at="2022-07-28T12:53:05Z" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:57Z" name="closeBrowser" finished-at="2022-07-29T12:43:57Z" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeConnectToDB()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@6f63b475]" started-at="2022-07-28T12:53:05Z" name="closeConnectToDB" finished-at="2022-07-28T12:53:05Z" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="closeConnectToDB()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:57Z" name="closeConnectToDB" finished-at="2022-07-29T12:43:57Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeConnectToDB -->
-      </class> <!-- AllTestCases.TC_01_Select_particular_rowTest -->
+      </class> <!-- AllTestCases.TC_03_create_compare_ContactTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -18,7 +18,8 @@ public class TC_02_createOrganization_Test extends BaseClass {
 	public void createOrg() throws Throwable {
 		Fakedata fake=new Fakedata();
 		String orgname=fake.orgname();
-		int randomNumber = fake.randomNumber();
+		//int randomNumber = fake.randomNumber();
+		int randomNumber = Fakedata.randomNumber();
 
 		String organizationname = (orgname+randomNumber);
 		Webdriver_utility util=new Webdriver_utility(driver);

@@ -15,7 +15,7 @@
       <class name="AllTestCases.TC_06_createorg_selectall_deleteTest"/>
       <class name="AllTestCases.TC_01_Select_particular_rowTest"/>
       <class name="AllTestCases.TC_05_create_camp_deleteCamp_Test"/>
-      <class name="AllTestCases.TC_03_create_compare_orgTest"/>
+      <class name="AllTestCases.TC_03_create_compare_ContactTest"/>
       <class name="AllTestCases.TC_02_createOrganization_Test"/>
     </classes>
   </test> <!-- Test -->

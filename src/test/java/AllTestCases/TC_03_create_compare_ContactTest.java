@@ -10,7 +10,7 @@ import com.Vtiger_generic.Webdriver_utility;
 import Pom_Classes.ContactInformation;
 import Pom_Classes.Homepage;
 
-public class TC_03_create_compare_orgTest extends BaseClass {
+public class TC_03_create_compare_ContactTest extends BaseClass {
 	@Test(groups="Regression")
 	public void abcd() throws Throwable {
 
@@ -37,6 +37,7 @@ public class TC_03_create_compare_orgTest extends BaseClass {
 		contactinf.getsearchNewwindowbtn().click();
 		Thread.sleep(2000);
 		driver.switchTo().window(mainid);
+		//util.switchtoMainWindow();
 		Thread.sleep(3000);
 		contactinf.getcontactsavebtn().click();
 		WebElement s1=contactinf.getcompareCreatedContact();
