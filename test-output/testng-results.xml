@@ -2,43 +2,43 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-29T12:43:31Z" name="Default suite" finished-at="2022-07-29T12:43:57Z" duration-ms="25821">
+  <suite started-at="2022-08-02T10:17:20Z" name="Default suite" finished-at="2022-08-02T10:17:36Z" duration-ms="16077">
     <groups>
-      <group name="Regression">
-        <method signature="TC_03_create_compare_ContactTest.abcd()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" name="abcd" class="AllTestCases.TC_03_create_compare_ContactTest"/>
-      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="TC_01_Select_particular_rowTest.main1()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@7749bf93]" name="main1" class="AllTestCases.TC_01_Select_particular_rowTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2022-07-29T12:43:31Z" name="Default test" finished-at="2022-07-29T12:43:57Z" duration-ms="25821">
-      <class name="AllTestCases.TC_03_create_compare_ContactTest">
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:31Z" name="connectToDB" finished-at="2022-07-29T12:43:31Z" duration-ms="17" status="PASS">
+    <test started-at="2022-08-02T10:17:20Z" name="Default test" finished-at="2022-08-02T10:17:36Z" duration-ms="16077">
+      <class name="AllTestCases.TC_01_Select_particular_rowTest">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@7749bf93]" started-at="2022-08-02T10:17:20Z" name="connectToDB" finished-at="2022-08-02T10:17:20Z" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:31Z" name="launchBrowser" finished-at="2022-07-29T12:43:35Z" duration-ms="4472" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@7749bf93]" started-at="2022-08-02T10:17:20Z" name="launchBrowser" finished-at="2022-08-02T10:17:25Z" duration-ms="4337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="logionAppln()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:35Z" name="logionAppln" finished-at="2022-07-29T12:43:38Z" duration-ms="2415" status="PASS">
+        <test-method is-config="true" signature="logionAppln()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@7749bf93]" started-at="2022-08-02T10:17:25Z" name="logionAppln" finished-at="2022-08-02T10:17:27Z" duration-ms="2291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logionAppln -->
-        <test-method signature="abcd()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:38Z" name="abcd" finished-at="2022-07-29T12:43:55Z" duration-ms="17472" status="PASS">
+        <test-method signature="main1()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@7749bf93]" started-at="2022-08-02T10:17:27Z" name="main1" finished-at="2022-08-02T10:17:35Z" duration-ms="8022" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- abcd -->
-        <test-method is-config="true" signature="logoutAppln()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:55Z" name="logoutAppln" finished-at="2022-07-29T12:43:57Z" duration-ms="1348" status="PASS">
+        </test-method> <!-- main1 -->
+        <test-method is-config="true" signature="logoutAppln()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@7749bf93]" started-at="2022-08-02T10:17:35Z" name="logoutAppln" finished-at="2022-08-02T10:17:36Z" duration-ms="1213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutAppln -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:57Z" name="closeBrowser" finished-at="2022-07-29T12:43:57Z" duration-ms="78" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@7749bf93]" started-at="2022-08-02T10:17:36Z" name="closeBrowser" finished-at="2022-08-02T10:17:36Z" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeConnectToDB()[pri:0, instance:AllTestCases.TC_03_create_compare_ContactTest@6bffbc6d]" started-at="2022-07-29T12:43:57Z" name="closeConnectToDB" finished-at="2022-07-29T12:43:57Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeConnectToDB()[pri:0, instance:AllTestCases.TC_01_Select_particular_rowTest@7749bf93]" started-at="2022-08-02T10:17:36Z" name="closeConnectToDB" finished-at="2022-08-02T10:17:36Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeConnectToDB -->
-      </class> <!-- AllTestCases.TC_03_create_compare_ContactTest -->
+      </class> <!-- AllTestCases.TC_01_Select_particular_rowTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
