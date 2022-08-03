@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="AllTestCases.TC_01_Select_particular_rowTest">
+        <methods>
+          <include name="main1"/>
+          <include name="connectToDB"/>
+          <include name="logionAppln"/>
+          <include name="launchBrowser"/>
+          <include name="logoutAppln"/>
+          <include name="closeConnectToDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- AllTestCases.TC_01_Select_particular_rowTest -->
+      <class name="AllTestCases.TC_03_create_compare_orgTest">
+        <methods>
+          <include name="connectToDB"/>
+          <include name="abcd"/>
+          <include name="logionAppln"/>
+          <include name="launchBrowser"/>
+          <include name="logoutAppln"/>
+          <include name="closeConnectToDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- AllTestCases.TC_03_create_compare_orgTest -->
+      <class name="AllTestCases.TC_02_createOrganization_Test">
+        <methods>
+          <include name="createOrg"/>
+          <include name="connectToDB"/>
+          <include name="logionAppln"/>
+          <include name="launchBrowser"/>
+          <include name="logoutAppln"/>
+          <include name="closeConnectToDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- AllTestCases.TC_02_createOrganization_Test -->
+      <class name="AllTestCases.TC_04_create_org_delete_Test">
+        <methods>
+          <include name="run"/>
+          <include name="connectToDB"/>
+          <include name="logionAppln"/>
+          <include name="launchBrowser"/>
+          <include name="logoutAppln"/>
+          <include name="closeConnectToDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- AllTestCases.TC_04_create_org_delete_Test -->
+      <class name="AllTestCases.TC_05_create_camp_deleteCamp_Test">
+        <methods>
+          <include name="example"/>
+          <include name="connectToDB"/>
+          <include name="logionAppln"/>
+          <include name="launchBrowser"/>
+          <include name="logoutAppln"/>
+          <include name="closeConnectToDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- AllTestCases.TC_05_create_camp_deleteCamp_Test -->
+      <class name="AllTestCases.TC_06_createorg_selectall_deleteTest">
+        <methods>
+          <include name="connectToDB"/>
+          <include name="logionAppln"/>
+          <include name="launchBrowser"/>
+          <include name="exampl"/>
+          <include name="logoutAppln"/>
+          <include name="closeConnectToDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- AllTestCases.TC_06_createorg_selectall_deleteTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

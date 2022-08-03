@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="12" total="16" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-28T12:28:48Z" name="Suite" finished-at="2022-07-28T12:31:30Z" duration-ms="162049">
+    <groups>
+      <group name="Regression">
+        <method signature="TC_03_create_compare_orgTest.abcd()[pri:0, instance:AllTestCases.TC_03_create_compare_orgTest@2e6a5539]" name="abcd" class="AllTestCases.TC_03_create_compare_orgTest"/>
+        <method signature="TC_04_create_org_delete_Test.run()[pri:0, instance:AllTestCases.TC_04_create_org_delete_Test@2766ca9d]" name="run" class="AllTestCases.TC_04_create_org_delete_Test"/>
+        <method signature="TC_05_create_camp_deleteCamp_Test.example()[pri:0, instance:AllTestCases.TC_05_create_camp_deleteCamp_Test@65a15628]" name="example" class="AllTestCases.TC_05_create_camp_deleteCamp_Test"/>
+        <method signature="TC_06_createorg_selectall_deleteTest.exampl()[pri:0, instance:AllTestCases.TC_06_createorg_selectall_deleteTest@5460cf3a]" name="exampl" class="AllTestCases.TC_06_createorg_selectall_deleteTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="TC_05_create_camp_deleteCamp_Test.example()[pri:0, instance:AllTestCases.TC_05_create_camp_deleteCamp_Test@65a15628]" name="example" class="AllTestCases.TC_05_create_camp_deleteCamp_Test"/>
+        <method signature="TC_06_createorg_selectall_deleteTest.exampl()[pri:0, instance:AllTestCases.TC_06_createorg_selectall_deleteTest@5460cf3a]" name="exampl" class="AllTestCases.TC_06_createorg_selectall_deleteTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2022-07-28T12:28:48Z" name="Test" finished-at="2022-07-28T12:31:30Z" duration-ms="162049">
+      <class name="AllTestCases.TC_06_createorg_selectall_deleteTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:AllTestCases.TC_06_createorg_selectall_deleteTest@5460cf3a]" started-at="2022-07-28T12:30:12Z" name="launchBrowser" finished-at="2022-07-28T12:30:15Z" duration-ms="3057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="logionAppln()[pri:0, instance:AllTestCases.TC_06_createorg_selectall_deleteTest@5460cf3a]" started-at="2022-07-28T12:30:15Z" name="logionAppln" finished-at="2022-07-28T12:30:19Z" duration-ms="3909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logionAppln -->
+        <test-method signature="exampl()[pri:0, instance:AllTestCases.TC_06_createorg_selectall_deleteTest@5460cf3a]" started-at="2022-07-28T12:30:19Z" name="exampl" finished-at="2022-07-28T12:30:58Z" duration-ms="39201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exampl -->
+        <test-method is-config="true" signature="logoutAppln()[pri:0, instance:AllTestCases.TC_06_createorg_selectall_deleteTest@5460cf3a]" started-at="2022-07-28T12:30:58Z" name="logoutAppln" finished-at="2022-07-28T12:31:00Z" duration-ms="1799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutAppln -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:AllTestCases.TC_06_createorg_selectall_deleteTest@5460cf3a]" started-at="2022-07-28T12:31:00Z" name="closeBrowser" finished-at="2022-07-28T12:31:00Z" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- AllTestCases.TC_06_createorg_selectall_deleteTest -->
+      <class name="AllTestCases.TC_04_create_org_delete_Test">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:AllTestCases.TC_04_create_org_delete_Test@2766ca9d]" started-at="2022-07-28T12:28:48Z" name="connectToDB" finished-at="2022-07-28T12:28:48Z" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:AllTestCases.TC_04_create_org_delete_Test@2766ca9d]" started-at="2022-07-28T12:28:48Z" name="launchBrowser" finished-at="2022-07-28T12:28:54Z" duration-ms="5536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="logionAppln()[pri:0, instance:AllTestCases.TC_04_create_org_delete_Test@2766ca9d]" started-at="2022-07-28T12:28:54Z" name="logionAppln" finished-at="2022-07-28T12:28:58Z" duration-ms="3866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logionAppln -->
+        <test-method signature="run()[pri:0, instance:AllTestCases.TC_04_create_org_delete_Test@2766ca9d]" started-at="2022-07-28T12:28:58Z" name="run" finished-at="2022-07-28T12:29:33Z" duration-ms="34754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method is-config="true" signature="logoutAppln()[pri:0, instance:AllTestCases.TC_04_create_org_delete_Test@2766ca9d]" started-at="2022-07-28T12:29:33Z" name="logoutAppln" finished-at="2022-07-28T12:29:35Z" duration-ms="1895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutAppln -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:AllTestCases.TC_04_create_org_delete_Test@2766ca9d]" started-at="2022-07-28T12:29:35Z" name="closeBrowser" finished-at="2022-07-28T12:29:35Z" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeConnectToDB()[pri:0, instance:AllTestCases.TC_04_create_org_delete_Test@2766ca9d]" started-at="2022-07-28T12:31:31Z" name="closeConnectToDB" finished-at="2022-07-28T12:31:31Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnectToDB -->
+      </class> <!-- AllTestCases.TC_04_create_org_delete_Test -->
+      <class name="AllTestCases.TC_03_create_compare_orgTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:AllTestCases.TC_03_create_compare_orgTest@2e6a5539]" started-at="2022-07-28T12:31:00Z" name="launchBrowser" finished-at="2022-07-28T12:31:03Z" duration-ms="3177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="logionAppln()[pri:0, instance:AllTestCases.TC_03_create_compare_orgTest@2e6a5539]" started-at="2022-07-28T12:31:03Z" name="logionAppln" finished-at="2022-07-28T12:31:07Z" duration-ms="3783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logionAppln -->
+        <test-method signature="abcd()[pri:0, instance:AllTestCases.TC_03_create_compare_orgTest@2e6a5539]" started-at="2022-07-28T12:31:07Z" name="abcd" finished-at="2022-07-28T12:31:28Z" duration-ms="20826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abcd -->
+        <test-method is-config="true" signature="logoutAppln()[pri:0, instance:AllTestCases.TC_03_create_compare_orgTest@2e6a5539]" started-at="2022-07-28T12:31:28Z" name="logoutAppln" finished-at="2022-07-28T12:31:30Z" duration-ms="1912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutAppln -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:AllTestCases.TC_03_create_compare_orgTest@2e6a5539]" started-at="2022-07-28T12:31:30Z" name="closeBrowser" finished-at="2022-07-28T12:31:30Z" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- AllTestCases.TC_03_create_compare_orgTest -->
+      <class name="AllTestCases.TC_05_create_camp_deleteCamp_Test">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:AllTestCases.TC_05_create_camp_deleteCamp_Test@65a15628]" started-at="2022-07-28T12:29:35Z" name="launchBrowser" finished-at="2022-07-28T12:29:38Z" duration-ms="3027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="logionAppln()[pri:0, instance:AllTestCases.TC_05_create_camp_deleteCamp_Test@65a15628]" started-at="2022-07-28T12:29:38Z" name="logionAppln" finished-at="2022-07-28T12:29:42Z" duration-ms="3816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logionAppln -->
+        <test-method signature="example()[pri:0, instance:AllTestCases.TC_05_create_camp_deleteCamp_Test@65a15628]" started-at="2022-07-28T12:29:42Z" name="example" finished-at="2022-07-28T12:30:10Z" duration-ms="28455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- example -->
+        <test-method is-config="true" signature="logoutAppln()[pri:0, instance:AllTestCases.TC_05_create_camp_deleteCamp_Test@65a15628]" started-at="2022-07-28T12:30:10Z" name="logoutAppln" finished-at="2022-07-28T12:30:12Z" duration-ms="1838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutAppln -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:AllTestCases.TC_05_create_camp_deleteCamp_Test@65a15628]" started-at="2022-07-28T12:30:12Z" name="closeBrowser" finished-at="2022-07-28T12:30:12Z" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- AllTestCases.TC_05_create_camp_deleteCamp_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
